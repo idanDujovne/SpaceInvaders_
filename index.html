@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="init()" onkeyup="onKeyDown(event)">
+    <div class="menu-container">
+        <h1>Space Invaders</h1>
+        <h2>Score: <span>0</span></h2>
+    </div>
+    <div class="game-container">
+        <table class="board"></table>
+    </div>
+    <div class="game-over hide">
+        <h1><span></span></h1>
+        <button onclick="resetGame()">Restart</button>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/alien.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
